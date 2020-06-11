@@ -79,7 +79,7 @@ public class ArrayDeque<T> {
         if (isEmpty()) {
             return null;
         } else {
-            if (size > 16 && 4 * size <= arraySize) {
+            if (arraySize > 8 && 4 * size <= arraySize) {
                 resizeDown();
             }
             int current = nextFirst;
@@ -96,7 +96,7 @@ public class ArrayDeque<T> {
         if (isEmpty()) {
             return null;
         } else {
-            if (size > 8 && 4 * size <= arraySize) {
+            if (arraySize > 8 && 4 * size <= arraySize) {
                 resizeDown();
             }
             int current = nextLast;
