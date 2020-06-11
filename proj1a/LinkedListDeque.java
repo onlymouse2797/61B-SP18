@@ -86,7 +86,7 @@ public class LinkedListDeque<T> {
     }
 
     public T get(int index) {
-        if (index < 0 || index >=size) {
+        if (index < 0 || index >= size) {
             return null;
         }
         ListNode result = sentinel;
@@ -105,7 +105,7 @@ public class LinkedListDeque<T> {
     }
 
     private ListNode getRecursivehelper(ListNode current, int index) {
-        ListNode result =current;
+        ListNode result = current;
         if (index == 0) {
             result = current.next;
         } else {
