@@ -123,6 +123,7 @@ public class ArrayDeque<T> {
         int current = increase(nextFirst);
         for (int i = 0; i < size; i = i + 1) {
             newItems[i] = items[current];
+            items[current] = null;
             current = increase(current);
         }
         items = newItems;
@@ -135,6 +136,7 @@ public class ArrayDeque<T> {
         int current = increase(nextFirst);
         for (int i = 0; i < size; i = i + 1) {
             newItems[i] = items[current];
+            items[current] = null;
             current = increase(current);
         }
         items = newItems;
