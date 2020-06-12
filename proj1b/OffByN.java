@@ -2,7 +2,7 @@ public class OffByN implements CharacterComparator {
     private int diff;
 
     //constructor
-    OffByN(int N) {
+    public OffByN(int N) {
         diff = N;
     }
 
